@@ -5,6 +5,6 @@ describe('Custom element define', () => {
     global.customElements.define = jest.fn();
     // eslint-disable-next-line global-require
     require('./index');
-    expect(global.customElements.define).toHaveBeenCalledWith('test-component', testComponent)
+    expect(global.customElements.define).toHaveBeenCalledWith('test-component', testComponent);
   });
 });

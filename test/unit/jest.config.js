@@ -3,6 +3,7 @@ module.exports = {
     // Process js with babel-jest
     '^.+\\.js$': 'babel-jest',
   },
+  testEnvironment: '@happy-dom/jest-environment',
   setupFilesAfterEnv: ['<rootDir>/test/unit/setup.js'],
   moduleFileExtensions: ['js'],
   transformIgnorePatterns: [

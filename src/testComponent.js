@@ -10,7 +10,7 @@ export default class testComponent extends LitElement {
 
   constructor() {
     super();
-    this.hello = '';
+    this.disabled = undefined;
   }
 
   static get styles() {

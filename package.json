@@ -31,22 +31,16 @@
     "registry": "https://p-nexus-3.development.nl.eu.abnamro.com:8443/repository/fed-npm-releases/"
   },
   "dependencies": {
-    "@open-wc/testing": "^3.0.0-next.3",
     "lit": "^2.0.0-rc.4"
   },
   "devDependencies": {
     "@babel/core": "^7.12.0",
     "@babel/preset-env": "^7.12.0",
-    "@babel/plugin-proposal-class-properties": "^7.14.5",
-    "@babel/plugin-proposal-decorators": "^7.15.4",
-    "@babel/plugin-transform-runtime": "^7.15.0",
+    "@happy-dom/jest-environment": "^2.22.0",
     "@open-wc/eslint-config": "^5.0.0-next.0",
     "@open-wc/testing-helpers": "^2.0.0-next.0",
-    "@storybook/addon-a11y": "^6.0.28",
-    "@storybook/addon-essentials": "^6.0.28",
-    "@storybook/vue": "^6.0.28",
     "@testing-library/jest-dom": "^5.11.4",
-    "@webcomponents/webcomponentsjs": "^2.4.3",
+    "@webcomponents/webcomponentsjs": "^2.6.0",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^26.5.2",
     "babel-loader": "^8.1.0",
@@ -62,8 +56,6 @@
     "jest-css-modules": "^2.1.0",
     "lit-scss-loader": "^1.1.0",
     "sass": "^1.32.6",
-    "sass-loader": "^10.1.1",
-    "vue": "^2.6.12",
-    "vue-loader": "^15.9.3"
+    "sass-loader": "^10.1.1"
   }
 }
