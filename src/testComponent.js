@@ -5,12 +5,14 @@ import Styles from './styles.scss';
 
 export default class testComponent extends LitElement {
   static get properties() {
-    return {};
+    return {
+      disabled: { type: Boolean },
+    };
   }
 
   constructor() {
     super();
-    this.disabled = undefined;
+    this.hello = undefined;
   }
 
   static get styles() {
@@ -19,7 +21,9 @@ export default class testComponent extends LitElement {
 
   render() {
     return html`
-        <div>
+        <div ${this.disabled ? 'disabled' : ''}>
+        <slot name="input-slot"></slot>
+        <slot name="label-slot"></slot>
             <p>Hello World</p>
         </div>`;
   }
