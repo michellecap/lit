@@ -1,3 +1,3 @@
-import testComponent from './testComponent';
+import TestComponent from './TestComponent';
 
-customElements.define('test-component', testComponent);
+customElements.define('test-component', TestComponent);

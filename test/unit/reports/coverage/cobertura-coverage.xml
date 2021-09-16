@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage lines-valid="4" lines-covered="4" line-rate="1" branches-valid="2" branches-covered="1" branch-rate="0.5" timestamp="1631734821552" complexity="0" version="0.1">
+<coverage lines-valid="6" lines-covered="6" line-rate="1" branches-valid="2" branches-covered="1" branch-rate="0.5" timestamp="1631775604429" complexity="0" version="0.1">
   <sources>
     <source>/Users/michelleermen/lit</source>
   </sources>
@@ -14,21 +14,33 @@
     </class>
     <class name="testComponent.js" filename="src/testComponent.js" line-rate="1" branch-rate="0.5">
       <methods>
-        <method name="(anonymous_0)" hits="2" signature="()V">
+        <method name="(anonymous_0)" hits="1" signature="()V">
           <lines>
-            <line number="11" hits="2"/>
+            <line number="7" hits="1"/>
           </lines>
         </method>
         <method name="(anonymous_1)" hits="3" signature="()V">
           <lines>
-            <line number="15" hits="3"/>
+            <line number="13" hits="3"/>
+          </lines>
+        </method>
+        <method name="(anonymous_2)" hits="1" signature="()V">
+          <lines>
+            <line number="18" hits="1"/>
+          </lines>
+        </method>
+        <method name="(anonymous_3)" hits="3" signature="()V">
+          <lines>
+            <line number="22" hits="3"/>
           </lines>
         </method>
       </methods>
       <lines>
-        <line number="9" hits="3" branch="false"/>
-        <line number="12" hits="2" branch="false"/>
-        <line number="16" hits="3" branch="false"/>
+        <line number="8" hits="1" branch="false"/>
+        <line number="14" hits="3" branch="false"/>
+        <line number="15" hits="3" branch="false"/>
+        <line number="19" hits="1" branch="false"/>
+        <line number="23" hits="3" branch="false"/>
       </lines>
     </class>
   </packages>

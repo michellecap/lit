@@ -3,7 +3,7 @@ import { LitElement } from 'lit';
 import { html } from 'lit/static-html';
 import Styles from './styles.scss';
 
-export default class testComponent extends LitElement {
+export default class TestComponent extends LitElement {
   static get properties() {
     return {
       disabled: { type: Boolean },
