@@ -14,18 +14,18 @@ describe('TestComponent', () => {
     });
     it('shoud load default values and attributes', async () => {
       const el = await fixture('<test-component></test-component>');
-      expect(el.disabled).toStrictEqual(undefined);
+      expect(el.getAttribute('hellodisabled')).toStrictEqual(null);
     });
   });
 });
 
 describe('TestComponent2', () => {
   it('should load element with id and label', async () => {
-    const el = await fixture('<test-component disabled="true"><input type="radio" id="radio-id" slot="input-slot" /><label id="label-id" for="radio-id" slot="label-slot">test-run</label></test-component>');
+    const el = await fixture('<test-component hellodisabled="true"><input type="radio" id="radio-id" slot="input-slot" /><label id="label-id" for="radio-id" slot="label-slot">test-run</label></test-component>');
     const radio = el.shadowRoot.querySelector('input');
     const label = el.shadowRoot.querySelector('label');
     expect(label).toBeDefined();
     expect(radio).toBeDefined();
-    expect(el.getAttribute('disabled')).toBeTruthy();
+    expect(el.getAttribute('hellodisabled')).toStrictEqual("true");
   });
 });

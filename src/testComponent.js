@@ -6,13 +6,12 @@ import Styles from './styles.scss';
 export default class TestComponent extends LitElement {
   static get properties() {
     return {
-      disabled: { type: Boolean },
+      hellodisabled: { type: Boolean },
     };
   }
 
   constructor() {
     super();
-    this.hello = undefined;
   }
 
   static get styles() {
@@ -21,7 +20,7 @@ export default class TestComponent extends LitElement {
 
   render() {
     return html`
-        <div ${this.disabled ? 'disabled' : ''}>
+        <div class="${this.hellodisabled ? 'disabled' : ''}">
         <slot name="input-slot"></slot>
         <slot name="label-slot"></slot>
             <p>Hello World</p>

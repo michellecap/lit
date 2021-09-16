@@ -57,8 +57,6 @@
     "jest": "^26.5.3",
     "jest-axe": "^4.1.0",
     "jest-css-modules": "^2.1.0",
-    "lit-element": "^2.5.1",
-    "lit-html": "^1.4.1",
     "lit-scss-loader": "^1.1.0",
     "sass": "^1.32.6",
     "sass-loader": "^10.1.1"
