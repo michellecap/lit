@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
-<coverage lines-valid="5" lines-covered="5" line-rate="1" branches-valid="2" branches-covered="1" branch-rate="0.5" timestamp="1631789088904" complexity="0" version="0.1">
+<coverage lines-valid="5" lines-covered="5" line-rate="1" branches-valid="2" branches-covered="1" branch-rate="0.5" timestamp="1631793724075" complexity="0" version="0.1">
   <sources>
     <source>/Users/michelleermen/lit</source>
   </sources>
@@ -12,9 +12,9 @@
             <line number="7" hits="1"/>
           </lines>
         </method>
-        <method name="(anonymous_1)" hits="3" signature="()V">
+        <method name="(anonymous_1)" hits="4" signature="()V">
           <lines>
-            <line number="13" hits="3"/>
+            <line number="13" hits="4"/>
           </lines>
         </method>
         <method name="(anonymous_2)" hits="1" signature="()V">
@@ -22,17 +22,17 @@
             <line number="17" hits="1"/>
           </lines>
         </method>
-        <method name="(anonymous_3)" hits="3" signature="()V">
+        <method name="(anonymous_3)" hits="4" signature="()V">
           <lines>
-            <line number="21" hits="3"/>
+            <line number="21" hits="4"/>
           </lines>
         </method>
       </methods>
       <lines>
         <line number="8" hits="1" branch="false"/>
-        <line number="14" hits="3" branch="false"/>
+        <line number="14" hits="4" branch="false"/>
         <line number="18" hits="1" branch="false"/>
-        <line number="22" hits="3" branch="false"/>
+        <line number="22" hits="4" branch="false"/>
       </lines>
     </class>
     <class name="index.js" filename="src/index.js" line-rate="1" branch-rate="1">

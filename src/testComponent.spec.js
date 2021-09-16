@@ -1,8 +1,10 @@
 import { fixture } from '@open-wc/testing-helpers';
+import { axe, toHaveNoViolations } from 'jest-axe';
 import { LitElement } from 'lit';
 import TestComponent from './TestComponent';
 
 customElements.define('test-component', TestComponent);
+expect.extend(toHaveNoViolations);
 
 describe('TestComponent', () => {
   describe('constructor and properties of', () => {
@@ -27,5 +29,12 @@ describe('TestComponent2', () => {
     expect(label).toBeDefined();
     expect(radio).toBeDefined();
     expect(el.getAttribute('hellodisabled')).toStrictEqual("true");
+  });
+});
+
+describe('Test a11y', () => {
+  it('should be accessible and have no violations', async () => {
+    const htmlstr = await fixture('<test-component></test-component>');
+    expect(await axe(htmlstr)).toHaveNoViolations();
   });
 });
