@@ -1,6 +1,5 @@
 import { fixture } from '@open-wc/testing-helpers';
 import { LitElement } from 'lit';
-import { litFixture } from '@open-wc/testing-helpers';
 import testComponent from './testComponent';
 
 customElements.define('test-component', testComponent);
