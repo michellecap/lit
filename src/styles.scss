@@ -1,0 +1,88 @@
+$radiobutton-size: 16px;
+
+.radiobutton-wrapper {
+  display: flex;
+  margin-bottom: 2px;
+  /*
+  BASE STYLING
+  */
+  ::slotted(input) {
+    -webkit-appearance: initial;
+    appearance: initial;
+    width: $radiobutton-size;
+    height: $radiobutton-size;
+    border: 1px solid red;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 12px 0 0;
+  }
+
+  label,
+  ::slotted(label) {
+    vertical-align: middle;
+    width: calc(100% - (#{$radiobutton-size} + 12px));
+    margin-top: -1px;
+    font-weight: 400;
+    color: red;
+  }
+
+  ::slotted(input:checked) {
+    border: 1px solid red;
+  }
+  ::slotted(input:checked)::before {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10' style='width: 16px; height: 16px; display: inline-block;'%3E%3Ctitle%3Esy_others_dot%3C/title%3E%3Ccircle cx='50%' cy='50%' r='4' fill='%2300716B' fill-rule='evenodd'%3E%3C/circle%3E%3C/svg%3E");
+    position: absolute;
+    width: ($radiobutton-size - 2px);
+    height: ($radiobutton-size - 2px);
+  }
+
+  ::slotted(input::-ms-check) {
+    color: red;
+    fill: red;
+    background-color: transparent;
+  }
+
+  /*
+  STATE STYLING
+  */
+  ::slotted(input:hover) {
+    background-color: red;
+    border: 1px solid red;
+  }
+
+  ::slotted(input:checked:hover) {
+    border: 1px solid red;
+  }
+
+  ::slotted(input:active) {
+    background-color: red;
+    border: 1px solid red;
+  }
+
+  ::slotted(input:focus) {
+    border: 1px solid red;
+  }
+
+  ::slotted(input:checked:focus) {
+    border: 1px solid red;
+  }
+
+  ::slotted(input:disabled) {
+    background-color: red;
+    border: 1px solid red;
+  }
+
+  ::slotted(input:checked:disabled) {
+    background: red;
+    border: 1px solid red;
+    border-radius: 50%;
+  }
+
+  ::slotted(input:checked:disabled)::before {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10' style='width: 16px; height: 16px; display: inline-block;'%3E%3Ctitle%3Esy_others_dot%3C/title%3E%3Ccircle cx='50%' cy='50%' r='4' fill='%23B3B3B3' fill-rule='evenodd'%3E%3C/circle%3E%3C/svg%3E");
+  }
+
+  &.disabled ::slotted(label) {
+    color: red;
+  }
+}

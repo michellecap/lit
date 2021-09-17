@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1631793724068" clover="3.2.0">
-  <project timestamp="1631793724069" name="All files">
-    <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="1" methods="4" coveredmethods="4" elements="11" coveredelements="10" complexity="0" loc="5" ncloc="5" packages="1" files="2" classes="2"/>
+<coverage generated="1631887982749" clover="3.2.0">
+  <project timestamp="1631887982749" name="All files">
+    <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3" elements="9" coveredelements="9" complexity="0" loc="4" ncloc="4" packages="1" files="2" classes="2"/>
     <file name="TestComponent.js" path="/Users/michelleermen/lit/src/TestComponent.js">
-      <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="4" coveredmethods="4"/>
+      <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
       <line num="8" count="1" type="stmt"/>
-      <line num="14" count="4" type="stmt"/>
-      <line num="18" count="1" type="stmt"/>
-      <line num="22" count="4" type="stmt"/>
+      <line num="14" count="1" type="stmt"/>
+      <line num="18" count="6" type="stmt"/>
     </file>
     <file name="index.js" path="/Users/michelleermen/lit/src/index.js">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>

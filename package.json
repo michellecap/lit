@@ -1,66 +1,55 @@
 {
   "name": "test-component",
-  "version": "4.0.0",
+  "version": "2.0.1",
   "license": "ISC",
   "main": "./src/index.js",
+  "module": "./src/index.js",
   "scripts": {
-    "build": "rollup -c",
+    "build": "echo build N/A",
     "start": "npm run storybook",
+    "test": "echo 'coming soon'",
     "ft": "echo 'coming soon'",
     "ft-build": "echo 'coming soon'",
     "ut": "jest --no-cache --verbose -c='./test/unit/jest.config.js'",
     "ut-watch": "jest --no-cache --verbose --watch",
     "eslint": "eslint --ext .js src",
     "eslint-fix": "npm run eslint -- --fix",
-    "test": "npm run ut && npm run ft",
     "storybook": "start-storybook -p 6007 -s ./static",
     "build-storybook": "build-storybook -s ./static"
   },
   "files": [
-    "src/**/*.js",
+    "src/*.js",
     "src/**/*.scss",
-    "src/assets/*.svg",
     "!src/**/*.?(c)spec.js",
-    "dist/**/*.js"
+    "test/pages/**/*.js"
   ],
-  "repository": {
-    "type": "git",
-    "url": "ssh://git@p-bitbucket.nl.eu.abnamro.com:8444/fed/sc-aab-shell-header.git"
-  },
-  "publishConfig": {
-    "registry": "https://p-nexus-3.development.nl.eu.abnamro.com:8443/repository/fed-npm-releases/"
-  },
   "dependencies": {
-    "axe-core": "^4.2.1",
-    "jest-axe": "^5.0.1",
     "lit": "^2.0.0-rc.4"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.0",
-    "@babel/plugin-proposal-class-properties": "^7.14.5",
-    "@babel/plugin-proposal-decorators": "^7.15.4",
-    "@babel/preset-env": "^7.12.0",
-    "@happy-dom/jest-environment": "^2.22.0",
-    "@lit/reactive-element": "^1.0.0-rc.4",
+    "@babel/preset-env": "^7.15.4",
     "@open-wc/eslint-config": "^5.0.0-next.0",
-    "@open-wc/testing-helpers": "^2.0.0-next.0",
-    "@testing-library/jest-dom": "^5.11.4",
+    "@open-wc/testing": "^2.5.33",
+    "@storybook/addon-a11y": "^6.2.8",
+    "@storybook/addon-essentials": "^6.2.8",
+    "@storybook/vue": "^6.2.8",
+    "@testing-library/jest-dom": "^5.14.1",
     "@webcomponents/webcomponentsjs": "^2.6.0",
-    "babel-eslint": "^10.1.0",
     "babel-jest": "^27.2.0",
-    "babel-loader": "^8.1.0",
+    "babel-loader": "^8.2.2",
+    "babel-preset-vue": "^2.0.2",
     "copy-webpack-plugin": "^5.1.2",
-    "core-js-bundle": "^3.6.5",
-    "eslint": "^7.11.0",
-    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jest": "^24.1.0",
-    "eslint-plugin-lit": "^1.2.2",
+    "eslint-plugin-lit": "^1.5.1",
     "jest": "^27.2.0",
+    "jest-axe": "^5.0.1",
     "jest-css-modules": "^2.1.0",
-    "jsdom": "^17.0.0",
     "lit-scss-loader": "^1.1.0",
-    "sass": "^1.32.6",
-    "sass-loader": "^10.1.1"
+    "sass": "^1.41.1",
+    "sass-loader": "^10.1.1",
+    "vue": "^2.6.12",
+    "vue-loader": "^15.9.6"
   }
 }

@@ -7,7 +7,7 @@ module.exports = {
   setupFilesAfterEnv: ['<rootDir>/test/unit/setup.js'],
   moduleFileExtensions: ['js'],
   transformIgnorePatterns: [
-    '<rootDir>/node_modules/(?!(@open-wc|lit-element|@lit|lit-html|lit)/)',
+    '<rootDir>/node_modules/(?!(@open-wc|lit-element|@lit|lit-html|lit|chai-a11y-axe)/)',
   ],
   moduleNameMapper: {
     '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
